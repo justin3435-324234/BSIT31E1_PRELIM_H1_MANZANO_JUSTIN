@@ -50,7 +50,7 @@ class Program
     }
 }
 
-// New dedicated Calculator class
+
 class Calculator
 {
     public double Calculate(double num1, double num2, string op)
@@ -61,7 +61,7 @@ class Calculator
             case "-": return num1 - num2;
             case "*": return num1 * num2;
             case "/": return num1 / num2;
-            default: return double.NaN; // Returns 'Not a Number' if operator is invalid
+            default: return double.NaN; 
         }
     }
 }
