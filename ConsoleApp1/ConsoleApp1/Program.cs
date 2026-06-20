@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Instantiate the Calculator object
+        
         Calculator calc = new Calculator();
 
         while (true)
@@ -25,17 +25,17 @@ class Program
             Console.Write("Enter operator (+, -, *, /): ");
             string op = Console.ReadLine();
 
-            // Check for division by zero before processing
+            
             if (op == "/" && num2 == 0)
             {
                 Console.WriteLine("Cannot divide by zero.");
                 continue;
             }
 
-            // Call the class method to calculate the result
+  
             double result = calc.Calculate(num1, num2, op);
 
-            // Handle invalid operator return value
+    
             if (double.IsNaN(result))
             {
                 Console.WriteLine("Invalid operator.");
