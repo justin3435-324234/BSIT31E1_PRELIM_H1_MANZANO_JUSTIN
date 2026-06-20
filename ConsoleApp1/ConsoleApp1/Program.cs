@@ -51,17 +51,3 @@ class Program
 }
 
 
-class Calculator
-{
-    public double Calculate(double num1, double num2, string op)
-    {
-        switch (op)
-        {
-            case "+": return num1 + num2;
-            case "-": return num1 - num2;
-            case "*": return num1 * num2;
-            case "/": return num1 / num2;
-            default: return double.NaN; 
-        }
-    }
-}
